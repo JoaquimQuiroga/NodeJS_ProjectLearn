@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c2036d5-9a86-441c-a25c-7b0269099377" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/NodeJS_ProjectLearn.iml" afterPath="$PROJECT_DIR$/.idea/NodeJS_ProjectLearn.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/server/server.test.js" afterPath="$PROJECT_DIR$/server/server.test.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,21 +15,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server.js">
+      <file leaf-file-name="mongodb-queries.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pg/mongodb-queries.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+            <state relative-caret-position="648">
+              <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.test.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/server.test.js">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/models/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+            <state relative-caret-position="0">
+              <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -60,6 +61,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/server/server.test.js" />
+        <option value="$PROJECT_DIR$/pg/mongodb-queries.js" />
       </list>
     </option>
   </component>
@@ -107,7 +109,24 @@
             <path>
               <item name="NodeJS_ProjectLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="NodeJS_ProjectLearn" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pg" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="NodeJS_ProjectLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NodeJS_ProjectLearn" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="NodeJS_ProjectLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NodeJS_ProjectLearn" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="db" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="NodeJS_ProjectLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NodeJS_ProjectLearn" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -118,11 +137,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../php/php.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
@@ -144,11 +163,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Mocha.server\server.test.js">
-    <configuration name="mangodb-connect.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="mangodb-connect.js" working-dir="$PROJECT_DIR$/pg" />
+  <component name="RunManager" selected="Node.js.mongodb-queries.js">
     <configuration name="mangodb-delete.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="mangodb-delete.js" working-dir="$PROJECT_DIR$/pg" />
     <configuration name="mangodb-find.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="mangodb-find.js" working-dir="$PROJECT_DIR$/pg" />
     <configuration name="mangodb-update.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="mangodb-update.js" working-dir="$PROJECT_DIR$/pg" />
+    <configuration name="mongodb-queries.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="mongodb-queries.js" working-dir="$PROJECT_DIR$/pg" />
     <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/server" />
     <configuration name="server\server.test.js" type="mocha-javascript-test-runner" factoryName="Mocha" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
@@ -163,19 +182,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Mocha.server\server.test.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.mangodb-connect.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.mangodb-find.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.mangodb-delete.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.mangodb-update.js" />
-      <item index="5" class="java.lang.String" itemvalue="Node.js.server.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.mangodb-find.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.mangodb-delete.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.mangodb-update.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.server.js" />
+      <item index="5" class="java.lang.String" itemvalue="Node.js.mongodb-queries.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.mangodb-update.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.mangodb-delete.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.mangodb-find.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.mangodb-connect.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.mongodb-queries.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.server.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.mangodb-update.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.mangodb-delete.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.mangodb-find.js" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +215,7 @@
       <workItem from="1521317178468" duration="1987000" />
       <workItem from="1521413842184" duration="95000" />
       <workItem from="1521413972982" duration="3711000" />
-      <workItem from="1521460045411" duration="11411000" />
+      <workItem from="1521460045411" duration="15134000" />
     </task>
     <servers />
   </component>
@@ -233,7 +252,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17806000" />
+    <option name="totallyTimeSpent" value="21529000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -246,13 +265,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31211856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3304272" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31211856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3304272" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09265585" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -336,14 +354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pg/mangodb-connect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pg/mangodb-find.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -394,14 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/models/todo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -418,14 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/db/mongoose.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="677">
@@ -436,8 +430,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        <state relative-caret-position="333">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pg/mangodb-connect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/db/mongoose.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pg/mongodb-queries.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding />
         </state>
       </provider>
