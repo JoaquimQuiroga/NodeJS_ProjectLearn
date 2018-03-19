@@ -4,6 +4,7 @@
     <list default="true" id="5c2036d5-9a86-441c-a25c-7b0269099377" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
+      <change beforePath="$PROJECT_DIR$/server/server.test.js" afterPath="$PROJECT_DIR$/server/server.test.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +18,18 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-116">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="607">
+              <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="100" column="10" lean-forward="true" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -58,9 +69,9 @@
         <option value="$PROJECT_DIR$/server/models/todo.js" />
         <option value="$PROJECT_DIR$/server/models/user.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/server/server.test.js" />
         <option value="$PROJECT_DIR$/pg/mongodb-queries.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/server/server.test.js" />
       </list>
     </option>
   </component>
@@ -77,7 +88,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="XAMPP_7.1" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2391" />
     <option name="width" value="1218" />
     <option name="height" value="1309" />
@@ -162,7 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.server.js">
+  <component name="RunManager" selected="Mocha.server\server.test.js">
     <configuration name="mangodb-delete.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="mangodb-delete.js" working-dir="$PROJECT_DIR$/pg" />
     <configuration name="mangodb-find.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="mangodb-find.js" working-dir="$PROJECT_DIR$/pg" />
     <configuration name="mangodb-update.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="mangodb-update.js" working-dir="$PROJECT_DIR$/pg" />
@@ -214,44 +225,44 @@
       <workItem from="1521317178468" duration="1987000" />
       <workItem from="1521413842184" duration="95000" />
       <workItem from="1521413972982" duration="3711000" />
-      <workItem from="1521460045411" duration="16766000" />
+      <workItem from="1521460045411" duration="18270000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="server_server_test_js - 2018.03.19 at 12h 16m 07s.xml">
+    <history-entry file="server_server_test_js - 2018.03.19 at 15h 47m 31s.xml">
       <configuration name="server\server.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="server_server_test_js - 2018.03.19 at 12h 16m 36s.xml">
+    <history-entry file="server_server_test_js - 2018.03.19 at 15h 47m 52s.xml">
       <configuration name="server\server.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="server_server_test_js - 2018.03.19 at 12h 17m 00s.xml">
+    <history-entry file="server_server_test_js - 2018.03.19 at 15h 48m 19s.xml">
       <configuration name="server\server.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="server_server_test_js - 2018.03.19 at 12h 19m 28s.xml">
+    <history-entry file="server_server_test_js - 2018.03.19 at 15h 48m 43s.xml">
       <configuration name="server\server.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="server_server_test_js - 2018.03.19 at 12h 19m 51s.xml">
+    <history-entry file="server_server_test_js - 2018.03.19 at 15h 49m 01s.xml">
       <configuration name="server\server.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="server_server_test_js - 2018.03.19 at 12h 20m 06s.xml">
+    <history-entry file="server_server_test_js - 2018.03.19 at 15h 50m 13s.xml">
       <configuration name="server\server.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="server_server_test_js - 2018.03.19 at 12h 21m 43s.xml">
+    <history-entry file="server_server_test_js - 2018.03.19 at 15h 50m 17s.xml">
       <configuration name="server\server.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="server_server_test_js - 2018.03.19 at 12h 24m 18s.xml">
+    <history-entry file="server_server_test_js - 2018.03.19 at 15h 50m 22s.xml">
       <configuration name="server\server.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="server_server_test_js - 2018.03.19 at 12h 24m 41s.xml">
+    <history-entry file="server_server_test_js - 2018.03.19 at 15h 50m 45s.xml">
       <configuration name="server\server.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="server_server_test_js - 2018.03.19 at 12h 29m 33s.xml">
+    <history-entry file="server_server_test_js - 2018.03.19 at 15h 51m 35s.xml">
       <configuration name="server\server.test.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23161000" />
+    <option name="totallyTimeSpent" value="24665000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -263,16 +274,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2391" y="0" width="1218" height="1309" extended-state="0" />
+    <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31211856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33304042" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31211856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3304272" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1900175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09265585" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -420,14 +431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pg/mangodb-connect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -460,10 +463,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="100" column="10" lean-forward="true" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="607">
+          <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
           <folding />
         </state>
       </provider>
