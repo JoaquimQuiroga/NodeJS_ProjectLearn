@@ -11,6 +11,7 @@ app.use(bodyParser.json())
 
 //access structure db
 app.post('/todos', (req, res) => {
+  //console.log(JSON.stringify(req.body.text,undefined,2))
   let todo = new Todo({
     text: req.body.text
   })
@@ -18,10 +19,10 @@ app.post('/todos', (req, res) => {
   //saving
   todo.save().then((doc) => {
     res.send(doc)
-    console.log(`Saved : ${JSON.stringify(doc, undefined, 2)}`)
+    //console.log(`Saved : ${JSON.stringify(doc, undefined, 2)}`)
   }, (e) => {
     res.status(400).send(e)
-    console.log(`Error: ${e}`)
+    //console.log(`Error: ${e}`)
   })
 
 })
@@ -31,3 +32,4 @@ app.listen(3000, () => {
 })
 
 
+module.exports = {app}
