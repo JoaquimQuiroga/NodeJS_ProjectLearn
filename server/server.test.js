@@ -101,3 +101,36 @@ describe('GET /todos/:id', () => {
     done()
   })
 })
+
+describe('DELETE /todos/:id', () => {
+  it('Should remove the doc with ID', (done) => {
+    request(app)
+      .delete(`/todos/${dummyTodo[1]._id.toHexString()}`)
+      .expect(200)
+      .expect((res) => {
+        expect(res.body.todo._id).toBe(dummyTodo[1]._id.toHexString())
+      })
+      .end((err, res) => {
+        if (err) {
+          return done(err)
+        }
+        Todo.findById(dummyTodo[1]._id.toHexString()).then((todo) => {
+          expect(todo).toBeNull()
+          done()
+        }).catch((e) => done(e))
+      })
+  })
+  it('should return 404 with invalid ID objet', (done) => {
+    request(app)
+      .get(`/todos/12356sdada`)
+      .expect(404)
+    done()
+  })
+  it('shoudl return 404 with valid ID objet but no match', (done) => {
+    request(app)
+      .get(`/todos/5aafd75d7891252838b37734`)
+      .expect(404)
+    done()
+  })
+
+})
