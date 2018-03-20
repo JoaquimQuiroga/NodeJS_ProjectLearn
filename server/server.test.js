@@ -122,15 +122,60 @@ describe('DELETE /todos/:id', () => {
   })
   it('should return 404 with invalid ID objet', (done) => {
     request(app)
-      .get(`/todos/12356sdada`)
+      .delete(`/todos/12356sdada`)
       .expect(404)
     done()
   })
   it('shoudl return 404 with valid ID objet but no match', (done) => {
     request(app)
-      .get(`/todos/5aafd75d7891252838b37734`)
+      .delete(`/todos/5aafd75d7891252838b37734`)
       .expect(404)
     done()
   })
 
+})
+
+describe('PATCH /todos/:id', () => {
+  it('Should update the doc with ID', (done) => {
+    let id = dummyTodo[0]._id.toHexString()
+    dataOut = {
+      text: 'Text updated',
+      completed: true
+    }
+    request(app)
+      .patch('/todos/' + id)
+      .send(dataOut)
+      .expect(200)
+      .expect((res) => {
+        expect(res.body.todo._id).toBe(dummyTodo[0]._id.toHexString())
+        expect(res.body.todo.text).toBe(dataOut.text)
+        expect(res.body.todo.completed).toBe(dataOut.completed)
+        //expect(res.body.todo.completedAt).toBeGreater(1);
+      })
+      .end((err, res) => {
+        if (err) {
+          return done(err)
+        }
+        done()
+      })
+  })
+  it('should clear completedAt when todo is not completed', (done) => {
+    let id = dummyTodo[0]._id.toHexString()
+    dataOut = {
+      text: 'Text updated2',
+      completed: false
+    }
+    request(app)
+      .patch('/todos/' + id)
+      .send(dataOut)
+      .expect(200)
+      .expect((res) => {
+        expect(res.body.todo.completedAt).toBeNull()
+      }).end((err, res) => {
+      if (err) {
+        return done(err)
+      }
+      done()
+    })
+  })
 })
