@@ -1,4 +1,6 @@
-const _ = require('lodash')
+require('./config/config')
+
+
 const express = require('express')
 const bodyParser = require('body-parser')
 const {ObjectID} = require('mongodb')
@@ -101,8 +103,8 @@ app.patch('/todos/:id', (req, res) => {
 
 })
 
-app.listen(port, () => {
-  console.log('Started on port ', port)
+app.listen(process.env.PORT, () => {
+  console.log('Started on port ', process.env.PORT)
 })
 
 module.exports = {app}
