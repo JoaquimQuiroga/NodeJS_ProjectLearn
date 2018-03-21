@@ -1,6 +1,6 @@
 require('./config/config')
 
-const _ =require('lodash')
+const _ = require('lodash')
 const express = require('express')
 const bodyParser = require('body-parser')
 const {ObjectID} = require('mongodb')
@@ -101,6 +101,33 @@ app.patch('/todos/:id', (req, res) => {
     res.status(400).send()
   })
 
+})
+
+// POST /users
+app.post('/users', (req, res) => {
+  //console.log(JSON.stringify(req.body.text,undefined,2))
+  let body = _.pick(req.body, ['email', 'password'])
+  let user = new User(body)
+  //saving
+  user.save().then(() => {
+    return user.generateAuthToken()
+    //console.log(`Saved : ${JSON.stringify(doc, undefined, 2)}`)
+  }).then((token) => {
+    res.header('x-auth', token).send(user)
+  }).catch((e) => {
+    res.status(400).send(e)
+  })
+})
+
+//GET users
+app.get('/users', (req, res) => {
+  User.find().then((users) => {
+    res.send({
+      users: users
+    })
+  }, (e) => {
+    res.status(400).send(e)
+  })
 })
 
 app.listen(process.env.PORT, () => {
