@@ -201,36 +201,35 @@ describe('POST /users', () => {
     let email = 'example@ecample.com'
     let password = '123mnb!'
 
-
     request(app)
       .post('/users')
-      .send({email,password})
+      .send({email, password})
       .expect(200)
-      .expect((res)=>{
+      .expect((res) => {
         expect(res.headers['x-auth']).toBeDefined()
         expect(res.body._id).toBeDefined()
         expect(res.body.email).toBe(email)
       })
-      .end((err)=>{
-        if(err){
+      .end((err) => {
+        if (err) {
           return done(err)
         }
-        User.findOne({email}).then((user)=>{
+        User.findOne({email}).then((user) => {
           expect(user).toBeDefined()
           expect(user.password).not.toBe(password)
           done()
-        })
+        }).catch((e) => done(e))
       })
   })
 
   it('should return validation error if request invalid', (done) => {
-    let email = "joaquim.quiroga2phineal.com"
+    let email = 'joaquim.quiroga2phineal.com'
     let password = '123m'
     request(app)
       .post('/users')
-      .send({email,password})
+      .send({email, password})
       .expect(400)
-      .expect((res)=>{
+      .expect((res) => {
         expect(res.headers['x-auth']).not.toBeDefined()
       })
       .end(done)
@@ -238,16 +237,62 @@ describe('POST /users', () => {
   })
 
   it('should not create a user if email already in use', (done) => {
-    let email = "joaquim.quiroga@phineal.com"
+    let email = 'joaquim.quiroga@phineal.com'
     let password = '123mnb!'
 
     request(app)
       .post('/users')
-      .send({email,password})
+      .send({email, password})
       .expect(400)
-      .expect((res)=>{
+      .expect((res) => {
         expect(res.headers['x-auth']).not.toBeDefined()
       })
       .end(done)
+  })
+})
+
+describe('POST /user/login', () => {
+  it('should login user and return auth token', (done) => {
+    request(app)
+      .post('/user/login')
+      .send({
+        email: users[1].email,
+        password: users[1].password
+      })
+      .expect(200)
+      .expect((res) => {
+        expect(res.header['x-auth']).toBeDefined()
+      })
+      .end((err, res) => {
+        if (err) {
+          return done(err)
+        }
+        User.findById(users[1]._id).then((user) => {
+          expect(user.tokens.length).toBe(1)
+          done()
+        }).catch((e) => done(e))
+      })
+  })
+
+  it('should reject invalid password', (done) => {
+    request(app)
+      .post('/user/login')
+      .send({
+        email: users[1].email,
+        password: users[0].password
+      })
+      .expect(400)
+      .expect((res) => {
+        expect(res.header['x-auth']).not.toBeDefined()
+      })
+      .end((err, res) => {
+        if (err) {
+          return done(err)
+        }
+        User.findById(users[1]._id).then((user) => {
+          expect(user.tokens.length).toBe(0)
+          done()
+        }).catch((e) => done(e))
+      })
   })
 })
