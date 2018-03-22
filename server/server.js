@@ -16,10 +16,11 @@ let app = express()
 app.use(bodyParser.json())
 
 //access structure db
-app.post('/todos', (req, res) => {
+app.post('/todos', authenticate, (req, res) => {
   //console.log(JSON.stringify(req.body.text,undefined,2))
   let todo = new Todo({
-    text: req.body.text
+    text: req.body.text,
+    _creator: req.user._id
   })
 
   //saving
@@ -33,8 +34,10 @@ app.post('/todos', (req, res) => {
 
 })
 
-app.get('/todos', (req, res) => {
-  Todo.find().then((todos) => {
+app.get('/todos', authenticate, (req, res) => {
+  Todo.find({
+    _creator: req.user._id
+  }).then((todos) => {
     res.send({
       todos: todos
     })
